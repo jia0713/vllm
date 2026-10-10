@@ -1,0 +1,147 @@
+{
+  "first": [
+    {
+      "step": 1,
+      "before": {
+        "first": {
+          "computed": 0,
+          "known": 32,
+          "preemptions": 0
+        }
+      },
+      "scheduled": {
+        "first": 32
+      },
+      "positions": {
+        "first": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "computed_after_schedule": {
+        "first": 32
+      },
+      "block_tables": {
+        "first": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "sampled_counts": {
+        "first": 1
+      },
+      "preempted": [],
+      "remaining": {},
+      "free_blocks": 63
+    },
+    {
+      "step": 2,
+      "before": {},
+      "scheduled": {},
+      "positions": {},
+      "computed_after_schedule": {},
+      "block_tables": {},
+      "sampled_counts": {},
+      "preempted": [],
+      "remaining": {},
+      "free_blocks": 63
+    }
+  ],
+  "second": [
+    {
+      "step": 1,
+      "before": {
+        "second": {
+          "computed": 0,
+          "known": 32,
+          "preemptions": 0
+        }
+      },
+      "scheduled": {
+        "second": 16
+      },
+      "positions": {
+        "second": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "computed_after_schedule": {
+        "second": 32
+      },
+      "block_tables": {
+        "second": [
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "sampled_counts": {
+        "second": 1
+      },
+      "preempted": [],
+      "remaining": {},
+      "free_blocks": 63
+    },
+    {
+      "step": 2,
+      "before": {},
+      "scheduled": {},
+      "positions": {},
+      "computed_after_schedule": {},
+      "block_tables": {},
+      "sampled_counts": {},
+      "preempted": [],
+      "remaining": {},
+      "free_blocks": 63
+    }
+  ],
+  "cached_tokens": 16
+}

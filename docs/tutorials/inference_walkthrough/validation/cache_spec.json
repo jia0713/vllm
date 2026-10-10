@@ -1,0 +1,8 @@
+{
+  "evidence": "real CPU KVCacheSpec; no GPU allocation",
+  "block_size_original_tokens": 128,
+  "tokens_per_state": 4,
+  "records_per_page": 32,
+  "content_B": 18688,
+  "aligned_page_B": 19008
+}

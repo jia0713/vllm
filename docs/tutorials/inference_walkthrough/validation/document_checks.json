@@ -1,0 +1,10 @@
+{
+  "commit": "10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf",
+  "source_references_checked": 105,
+  "critical_call_sites_checked": 20,
+  "local_links_checked": 46,
+  "chapters": 10,
+  "mermaid_blocks": 12,
+  "scripts_parsed": 3,
+  "evidence": "static citation/link/syntax verification; no GPU execution"
+}

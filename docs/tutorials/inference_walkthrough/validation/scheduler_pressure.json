@@ -1,0 +1,600 @@
+[
+  {
+    "step": 1,
+    "before": {
+      "A": {
+        "computed": 0,
+        "known": 16,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 16,
+        "preemptions": 0
+      }
+    },
+    "scheduled": {
+      "A": 16
+    },
+    "positions": {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 16
+    },
+    "block_tables": {
+      "A": [
+        [
+          1
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "A": {
+        "computed": 16,
+        "known": 17,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 16,
+        "preemptions": 0
+      }
+    },
+    "free_blocks": 2
+  },
+  {
+    "step": 2,
+    "before": {
+      "A": {
+        "computed": 16,
+        "known": 17,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 16,
+        "preemptions": 0
+      }
+    },
+    "scheduled": {
+      "A": 1,
+      "B": 15
+    },
+    "positions": {
+      "A": [
+        16
+      ],
+      "B": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 17,
+      "B": 15
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ],
+      "B": [
+        [
+          3
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1,
+      "B": 0
+    },
+    "preempted": [],
+    "remaining": {
+      "A": {
+        "computed": 17,
+        "known": 18,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 15,
+        "known": 16,
+        "preemptions": 0
+      }
+    },
+    "free_blocks": 0
+  },
+  {
+    "step": 3,
+    "before": {
+      "A": {
+        "computed": 17,
+        "known": 18,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 15,
+        "known": 16,
+        "preemptions": 0
+      }
+    },
+    "scheduled": {
+      "A": 1,
+      "B": 1
+    },
+    "positions": {
+      "A": [
+        17
+      ],
+      "B": [
+        15
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 18,
+      "B": 16
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ],
+      "B": [
+        [
+          3
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1,
+      "B": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "A": {
+        "computed": 18,
+        "known": 19,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 16,
+        "known": 17,
+        "preemptions": 0
+      }
+    },
+    "free_blocks": 0
+  },
+  {
+    "step": 4,
+    "before": {
+      "A": {
+        "computed": 18,
+        "known": 19,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 16,
+        "known": 17,
+        "preemptions": 0
+      }
+    },
+    "scheduled": {
+      "A": 1
+    },
+    "positions": {
+      "A": [
+        18
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 19
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1
+    },
+    "preempted": [
+      "B"
+    ],
+    "remaining": {
+      "A": {
+        "computed": 19,
+        "known": 20,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 1
+  },
+  {
+    "step": 5,
+    "before": {
+      "A": {
+        "computed": 19,
+        "known": 20,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "A": 1
+    },
+    "positions": {
+      "A": [
+        19
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 20
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "A": {
+        "computed": 20,
+        "known": 21,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 1
+  },
+  {
+    "step": 6,
+    "before": {
+      "A": {
+        "computed": 20,
+        "known": 21,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "A": 1
+    },
+    "positions": {
+      "A": [
+        20
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 21
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "A": {
+        "computed": 21,
+        "known": 22,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 1
+  },
+  {
+    "step": 7,
+    "before": {
+      "A": {
+        "computed": 21,
+        "known": 22,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "A": 1
+    },
+    "positions": {
+      "A": [
+        21
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 22
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "A": {
+        "computed": 22,
+        "known": 23,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 1
+  },
+  {
+    "step": 8,
+    "before": {
+      "A": {
+        "computed": 22,
+        "known": 23,
+        "preemptions": 0
+      },
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "A": 1
+    },
+    "positions": {
+      "A": [
+        22
+      ]
+    },
+    "computed_after_schedule": {
+      "A": 23
+    },
+    "block_tables": {
+      "A": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "A": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 3
+  },
+  {
+    "step": 9,
+    "before": {
+      "B": {
+        "computed": 0,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "B": 16
+    },
+    "positions": {
+      "B": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "computed_after_schedule": {
+      "B": 16
+    },
+    "block_tables": {
+      "B": [
+        [
+          2
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "B": 0
+    },
+    "preempted": [],
+    "remaining": {
+      "B": {
+        "computed": 16,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 2
+  },
+  {
+    "step": 10,
+    "before": {
+      "B": {
+        "computed": 16,
+        "known": 17,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "B": 1
+    },
+    "positions": {
+      "B": [
+        16
+      ]
+    },
+    "computed_after_schedule": {
+      "B": 17
+    },
+    "block_tables": {
+      "B": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "B": 1
+    },
+    "preempted": [],
+    "remaining": {
+      "B": {
+        "computed": 17,
+        "known": 18,
+        "preemptions": 1
+      }
+    },
+    "free_blocks": 1
+  },
+  {
+    "step": 11,
+    "before": {
+      "B": {
+        "computed": 17,
+        "known": 18,
+        "preemptions": 1
+      }
+    },
+    "scheduled": {
+      "B": 1
+    },
+    "positions": {
+      "B": [
+        17
+      ]
+    },
+    "computed_after_schedule": {
+      "B": 18
+    },
+    "block_tables": {
+      "B": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "sampled_counts": {
+      "B": 1
+    },
+    "preempted": [],
+    "remaining": {},
+    "free_blocks": 3
+  },
+  {
+    "step": 12,
+    "before": {},
+    "scheduled": {},
+    "positions": {},
+    "computed_after_schedule": {},
+    "block_tables": {},
+    "sampled_counts": {},
+    "preempted": [],
+    "remaining": {},
+    "free_blocks": 3
+  }
+]

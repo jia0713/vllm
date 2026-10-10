@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-10",
+  "user_timezone": "Asia/Shanghai",
+  "repository": "/workspace/vllm",
+  "remote": "https://github.com/jia0713/vllm.git",
+  "branch": "work",
+  "commit": "10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf",
+  "initial_worktree": "clean, observed before tutorial edits",
+  "python": "3.12.14",
+  "packages": {
+    "torch": "2.13.0+cpu",
+    "transformers": "5.19.0",
+    "triton": "3.8.0+cpu",
+    "vllm": "0.1.dev22801+g10cc2f6ae.cpu",
+    "pre-commit": "4.6.2"
+  },
+  "cuda_available": false,
+  "cuda_device_count": 0,
+  "weight_scope": "no V4/V4.1 weights found in accessible workspace",
+  "existing_trace_scope": "CPU scheduler log with synthetic outputs",
+  "gpu_experiments_run": false,
+  "official_deepgemm_revision": "057ca5964aae0879ff2e0eb71ee05a3cb0ba3df7"
+}

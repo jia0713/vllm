@@ -1,0 +1,950 @@
+{
+  "commit": "10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf",
+  "references": {
+    "schedschedule": {
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "symbol": "Scheduler.schedule",
+      "start": 580,
+      "end": 1556,
+      "declaration": "def schedule(self, throttle_prefills: bool = False) -> SchedulerOutput:",
+      "sha256": "938c9ce589e4fd9a7a36065a1592fb091ee7f39fd52875f9d5410f8c05ad24e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/sched/scheduler.py#L580-L1556"
+    },
+    "schedadd": {
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "symbol": "Scheduler.add_request",
+      "start": 2615,
+      "end": 2646,
+      "declaration": "def add_request(self, request: Request) -> None:",
+      "sha256": "938c9ce589e4fd9a7a36065a1592fb091ee7f39fd52875f9d5410f8c05ad24e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/sched/scheduler.py#L2615-L2646"
+    },
+    "schedadvance": {
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "symbol": "Scheduler._update_after_schedule",
+      "start": 1616,
+      "end": 1648,
+      "declaration": "def _update_after_schedule(self, scheduler_output: SchedulerOutput) -> None:",
+      "sha256": "938c9ce589e4fd9a7a36065a1592fb091ee7f39fd52875f9d5410f8c05ad24e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/sched/scheduler.py#L1616-L1648"
+    },
+    "schedpreempt": {
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "symbol": "Scheduler._preempt_request",
+      "start": 1571,
+      "end": 1614,
+      "declaration": "def _preempt_request(",
+      "sha256": "938c9ce589e4fd9a7a36065a1592fb091ee7f39fd52875f9d5410f8c05ad24e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/sched/scheduler.py#L1571-L1614"
+    },
+    "schedupdate": {
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "symbol": "Scheduler.update_from_output",
+      "start": 2025,
+      "end": 2423,
+      "declaration": "def update_from_output(",
+      "sha256": "938c9ce589e4fd9a7a36065a1592fb091ee7f39fd52875f9d5410f8c05ad24e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/sched/scheduler.py#L2025-L2423"
+    },
+    "schedfree": {
+      "path": "vllm/v1/core/sched/scheduler.py",
+      "symbol": "Scheduler._free_request",
+      "start": 2713,
+      "end": 2743,
+      "declaration": "def _free_request(",
+      "sha256": "938c9ce589e4fd9a7a36065a1592fb091ee7f39fd52875f9d5410f8c05ad24e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/sched/scheduler.py#L2713-L2743"
+    },
+    "kvlookup": {
+      "path": "vllm/v1/core/kv_cache_manager.py",
+      "symbol": "KVCacheManager.get_computed_blocks",
+      "start": 264,
+      "end": 321,
+      "declaration": "def get_computed_blocks(self, request: Request) -> tuple[KVCacheBlocks, int, int]:",
+      "sha256": "940d4cba8c5ad2c5f2d209beddbac97c812e83302266dc8e38f8e4b8683dccd1",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/kv_cache_manager.py#L264-L321"
+    },
+    "kvallocate": {
+      "path": "vllm/v1/core/kv_cache_manager.py",
+      "symbol": "KVCacheManager.allocate_slots",
+      "start": 371,
+      "end": 618,
+      "declaration": "def allocate_slots(",
+      "sha256": "940d4cba8c5ad2c5f2d209beddbac97c812e83302266dc8e38f8e4b8683dccd1",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/kv_cache_manager.py#L371-L618"
+    },
+    "kvfree": {
+      "path": "vllm/v1/core/kv_cache_manager.py",
+      "symbol": "KVCacheManager.free",
+      "start": 620,
+      "end": 629,
+      "declaration": "def free(self, request: Request) -> None:",
+      "sha256": "940d4cba8c5ad2c5f2d209beddbac97c812e83302266dc8e38f8e4b8683dccd1",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/kv_cache_manager.py#L620-L629"
+    },
+    "poolfree": {
+      "path": "vllm/v1/core/block_pool.py",
+      "symbol": "BlockPool.free_blocks",
+      "start": 774,
+      "end": 805,
+      "declaration": "def free_blocks(self, ordered_blocks: Iterable[KVCacheBlock]) -> None:",
+      "sha256": "6d1e0d89b43e3b2ae396906b9c2f0551dbe192b60d05f8c1ca2d93a91bbbeea3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/block_pool.py#L774-L805"
+    },
+    "poolnew": {
+      "path": "vllm/v1/core/block_pool.py",
+      "symbol": "BlockPool.get_new_blocks",
+      "start": 666,
+      "end": 700,
+      "declaration": "def get_new_blocks(self, num_blocks: int) -> list[KVCacheBlock]:",
+      "sha256": "6d1e0d89b43e3b2ae396906b9c2f0551dbe192b60d05f8c1ca2d93a91bbbeea3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/core/block_pool.py#L666-L700"
+    },
+    "corestep": {
+      "path": "vllm/v1/engine/core.py",
+      "symbol": "EngineCore.step",
+      "start": 647,
+      "end": 676,
+      "declaration": "def step(self) -> tuple[dict[int, EngineCoreOutputs], bool]:",
+      "sha256": "ea217399d9e1d74e7fbb519f22eabba3459e5f81e1b3319e909ac4c2af1350c2",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/engine/core.py#L647-L676"
+    },
+    "corekvinit": {
+      "path": "vllm/v1/engine/core.py",
+      "symbol": "EngineCore._initialize_kv_caches",
+      "start": 256,
+      "end": 401,
+      "declaration": "def _initialize_kv_caches(self, vllm_config: VllmConfig) -> KVCacheConfig:",
+      "sha256": "ea217399d9e1d74e7fbb519f22eabba3459e5f81e1b3319e909ac4c2af1350c2",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/engine/core.py#L256-L401"
+    },
+    "workermodel": {
+      "path": "vllm/v1/worker/gpu_worker.py",
+      "symbol": "Worker.execute_model",
+      "start": 1267,
+      "end": 1325,
+      "declaration": "def execute_model(",
+      "sha256": "836b0de5f89cb5f1fd81f7797040af515fc0ccdc0b277e8bda3541626eb640c7",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_worker.py#L1267-L1325"
+    },
+    "workermemory": {
+      "path": "vllm/v1/worker/gpu_worker.py",
+      "symbol": "Worker.determine_available_memory",
+      "start": 599,
+      "end": 772,
+      "declaration": "def determine_available_memory(self) -> int:",
+      "sha256": "836b0de5f89cb5f1fd81f7797040af515fc0ccdc0b277e8bda3541626eb640c7",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_worker.py#L599-L772"
+    },
+    "executormodel": {
+      "path": "vllm/v1/executor/multiproc_executor.py",
+      "symbol": "MultiprocExecutor.execute_model",
+      "start": 341,
+      "end": 352,
+      "declaration": "def execute_model(  # type: ignore[override]",
+      "sha256": "948c15e09617b02e2d0746d9ee20b43168b083da71313d05f06b29a753f8570b",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/executor/multiproc_executor.py#L341-L352"
+    },
+    "runnerexecute": {
+      "path": "vllm/v1/worker/gpu_model_runner.py",
+      "symbol": "GPUModelRunner.execute_model",
+      "start": 4108,
+      "end": 4465,
+      "declaration": "def execute_model(",
+      "sha256": "ab30d950cd0a06e8f8f4c77126e95d9b0fe75335e7cb7e342652a1c85a24b757",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_model_runner.py#L4108-L4465"
+    },
+    "runnersample": {
+      "path": "vllm/v1/worker/gpu_model_runner.py",
+      "symbol": "GPUModelRunner.sample_tokens",
+      "start": 4483,
+      "end": 4738,
+      "declaration": "def sample_tokens(",
+      "sha256": "ab30d950cd0a06e8f8f4c77126e95d9b0fe75335e7cb7e342652a1c85a24b757",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_model_runner.py#L4483-L4738"
+    },
+    "runnerinputs": {
+      "path": "vllm/v1/worker/gpu_model_runner.py",
+      "symbol": "GPUModelRunner._prepare_inputs",
+      "start": 1943,
+      "end": 2270,
+      "declaration": "def _prepare_inputs(",
+      "sha256": "ab30d950cd0a06e8f8f4c77126e95d9b0fe75335e7cb7e342652a1c85a24b757",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_model_runner.py#L1943-L2270"
+    },
+    "runnerkvinit": {
+      "path": "vllm/v1/worker/gpu_model_runner.py",
+      "symbol": "GPUModelRunner.initialize_kv_cache",
+      "start": 7303,
+      "end": 7368,
+      "declaration": "def initialize_kv_cache(",
+      "sha256": "ab30d950cd0a06e8f8f4c77126e95d9b0fe75335e7cb7e342652a1c85a24b757",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_model_runner.py#L7303-L7368"
+    },
+    "runnerkvtensors": {
+      "path": "vllm/v1/worker/gpu_model_runner.py",
+      "symbol": "GPUModelRunner.initialize_kv_cache_tensors",
+      "start": 7227,
+      "end": 7274,
+      "declaration": "def initialize_kv_cache_tensors(",
+      "sha256": "ab30d950cd0a06e8f8f4c77126e95d9b0fe75335e7cb7e342652a1c85a24b757",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu_model_runner.py#L7227-L7274"
+    },
+    "v2runner": {
+      "path": "vllm/v1/worker/gpu/model_runner.py",
+      "symbol": "GPUModelRunner",
+      "start": 191,
+      "end": 2390,
+      "declaration": "class GPUModelRunner(LoRAModelRunnerMixin):",
+      "sha256": "5be06ca1e3aefc20e1b9cc0a993815d6c7b31857f21e2c100362dda0a61f2d63",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/gpu/model_runner.py#L191-L2390"
+    },
+    "registry": {
+      "path": "vllm/model_executor/models/registry.py",
+      "symbol": "模型注册项",
+      "start": 95,
+      "end": 95,
+      "declaration": "\"DeepseekV4ForCausalLM\": (\"vllm.models.deepseek_v4\", \"DeepseekV4ForCausalLM\"),",
+      "sha256": "01ac3cdf496d889d7c561d83a2ccc934f3a6e5d3f3410e2bcc38f015809d02b1",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/models/registry.py#L95-L95"
+    },
+    "registry41": {
+      "path": "vllm/model_executor/models/registry.py",
+      "symbol": "模型注册项",
+      "start": 370,
+      "end": 370,
+      "declaration": "\"DeepseekV41ForCausalLM\": (",
+      "sha256": "01ac3cdf496d889d7c561d83a2ccc934f3a6e5d3f3410e2bcc38f015809d02b1",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/models/registry.py#L370-L370"
+    },
+    "asyncadd": {
+      "path": "vllm/v1/engine/async_llm.py",
+      "symbol": "AsyncLLM.add_request",
+      "start": 382,
+      "end": 546,
+      "declaration": "async def add_request(",
+      "sha256": "96c29b2e03952584b15658a47daf5998430c62f2348f13e248ebfeefdce15500",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/engine/async_llm.py#L382-L546"
+    },
+    "clientadd": {
+      "path": "vllm/v1/engine/core_client.py",
+      "symbol": "AsyncMPClient.add_request_async",
+      "start": 1296,
+      "end": 1299,
+      "declaration": "async def add_request_async(self, request: EngineCoreRequest) -> None:",
+      "sha256": "386b528a69029507f80a2df4d6df2a4fa6ba2ba811501dc3449ceea58b5cd90a",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/engine/core_client.py#L1296-L1299"
+    },
+    "coreadd": {
+      "path": "vllm/v1/engine/core.py",
+      "symbol": "EngineCore.add_request",
+      "start": 503,
+      "end": 547,
+      "declaration": "def add_request(self, request: Request, request_wave: int = 0):",
+      "sha256": "ea217399d9e1d74e7fbb519f22eabba3459e5f81e1b3319e909ac4c2af1350c2",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/engine/core.py#L503-L547"
+    },
+    "groupreduce": {
+      "path": "vllm/distributed/parallel_state.py",
+      "symbol": "GroupCoordinator.all_reduce",
+      "start": 724,
+      "end": 745,
+      "declaration": "def all_reduce(self, input_: torch.Tensor) -> torch.Tensor:",
+      "sha256": "0e47cff9a89717183bdce6403f0454961848247f51306a0f1dfbe3d6e1b93336",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/distributed/parallel_state.py#L724-L745"
+    },
+    "devicear": {
+      "path": "vllm/distributed/device_communicators/cuda_communicator.py",
+      "symbol": "CudaCommunicator.all_reduce",
+      "start": 362,
+      "end": 435,
+      "declaration": "def all_reduce(self, input_):",
+      "sha256": "0a9ad3c5de17595fe5e2490fae7973d2078bc7f481ab40b0f9a48611ceac0588",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/distributed/device_communicators/cuda_communicator.py#L362-L435"
+    },
+    "v4select": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "_select_dsv4_attn_cls",
+      "start": 1011,
+      "end": 1042,
+      "declaration": "def _select_dsv4_attn_cls(vllm_config: VllmConfig) -> type[DeepseekV4Attention]:",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1011-L1042"
+    },
+    "v41select": {
+      "path": "vllm/models/deepseek_v41/nvidia/model.py",
+      "symbol": "_select_dsv4_attn_cls",
+      "start": 197,
+      "end": 243,
+      "declaration": "def _select_dsv4_attn_cls(vllm_config: VllmConfig) -> type[DeepseekV4Attention]:",
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/model.py#L197-L243"
+    },
+    "v4entry": {
+      "path": "vllm/models/deepseek_v4/__init__.py",
+      "symbol": "平台导出分支",
+      "start": 17,
+      "end": 17,
+      "declaration": "if current_platform.is_rocm():",
+      "sha256": "6a52c975cf97b44e0059d17f376510402f23be41796dac30dec554b05e531507",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/__init__.py#L17-L17"
+    },
+    "v41entry": {
+      "path": "vllm/models/deepseek_v41/__init__.py",
+      "symbol": "平台导出分支",
+      "start": 9,
+      "end": 9,
+      "declaration": "if current_platform.is_rocm():",
+      "sha256": "6b928f07c6f67f4fd1b599a143cd15a1309a177c877f7f08b29d5fa30db659fe",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/__init__.py#L9-L9"
+    },
+    "v4config": {
+      "path": "vllm/transformers_utils/configs/deepseek_v4.py",
+      "symbol": "DeepseekV4Config.__init__",
+      "start": 11,
+      "end": 52,
+      "declaration": "def __init__(",
+      "sha256": "df6d398d548cd140e61d12e8ffe95b9f03edeaf81245d450fe3e976c0f3cf518",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/transformers_utils/configs/deepseek_v4.py#L11-L52"
+    },
+    "v41config": {
+      "path": "vllm/transformers_utils/configs/deepseek_v41.py",
+      "symbol": "DeepseekV41Config.__init__",
+      "start": 20,
+      "end": 62,
+      "declaration": "def __init__(",
+      "sha256": "0eca0d67503f92e668078626ea60856aaa2a5f2afff87d565f6c02e08eb88630",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/transformers_utils/configs/deepseek_v41.py#L20-L62"
+    },
+    "v4forward": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4ForCausalLM.forward",
+      "start": 1878,
+      "end": 1888,
+      "declaration": "def forward(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1878-L1888"
+    },
+    "v4logits": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4ForCausalLM.compute_logits",
+      "start": 1865,
+      "end": 1870,
+      "declaration": "def compute_logits(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1865-L1870"
+    },
+    "v4modelfwd": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4Model.forward",
+      "start": 1424,
+      "end": 1526,
+      "declaration": "def forward(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1424-L1526"
+    },
+    "v4decoder": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4DecoderLayer.forward",
+      "start": 1188,
+      "end": 1282,
+      "declaration": "def forward(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1188-L1282"
+    },
+    "v4decoderinit": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4DecoderLayer.__init__",
+      "start": 1060,
+      "end": 1186,
+      "declaration": "def __init__(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1060-L1186"
+    },
+    "v4mlp": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4MLP.__init__",
+      "start": 133,
+      "end": 183,
+      "declaration": "def __init__(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L133-L183"
+    },
+    "v4moeinit": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4MoE.__init__",
+      "start": 661,
+      "end": 794,
+      "declaration": "def __init__(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L661-L794"
+    },
+    "v4moefwd": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4MoE.forward",
+      "start": 896,
+      "end": 992,
+      "declaration": "def forward(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L896-L992"
+    },
+    "v4moefusedinit": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4MoE._init_fused_moe_experts",
+      "start": 848,
+      "end": 894,
+      "declaration": "def _init_fused_moe_experts(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L848-L894"
+    },
+    "v4moefusedfwd": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "DeepseekV4MoE._forward_fused_moe",
+      "start": 994,
+      "end": 1004,
+      "declaration": "def _forward_fused_moe(",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L994-L1004"
+    },
+    "v4spselect": {
+      "path": "vllm/models/deepseek_v4/nvidia/model.py",
+      "symbol": "_use_sequence_parallel",
+      "start": 1045,
+      "end": 1056,
+      "declaration": "def _use_sequence_parallel(vllm_config: VllmConfig) -> bool:",
+      "sha256": "0e5e1d3886bc94592914bb23309fb8469b749bde5c6a66c08807650760521686",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/model.py#L1045-L1056"
+    },
+    "v4attninit": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention.__init__",
+      "start": 195,
+      "end": 469,
+      "declaration": "def __init__(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L195-L469"
+    },
+    "v4attnfwd": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention.forward",
+      "start": 471,
+      "end": 501,
+      "declaration": "def forward(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L471-L501"
+    },
+    "v4prepare": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention._prepare_and_attn",
+      "start": 568,
+      "end": 645,
+      "declaration": "def _prepare_and_attn(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L568-L645"
+    },
+    "v4inputprojs": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention._run_parallel_input_projections",
+      "start": 672,
+      "end": 731,
+      "declaration": "def _run_parallel_input_projections(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L672-L731"
+    },
+    "v4insert": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention._fused_qnorm_rope_kv_insert",
+      "start": 759,
+      "end": 847,
+      "declaration": "def _fused_qnorm_rope_kv_insert(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L759-L847"
+    },
+    "v4sparse": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention._sparse_indexer_and_attn",
+      "start": 734,
+      "end": 757,
+      "declaration": "def _sparse_indexer_and_attn(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L734-L757"
+    },
+    "v4spec": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Attention.get_kv_cache_spec",
+      "start": 856,
+      "end": 879,
+      "declaration": "def get_kv_cache_spec(self, vllm_config: VllmConfig) -> KVCacheSpec | None:",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L856-L879"
+    },
+    "v4indexspec": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4IndexerCache.get_kv_cache_spec",
+      "start": 907,
+      "end": 920,
+      "declaration": "def get_kv_cache_spec(self, vllm_config: VllmConfig) -> KVCacheSpec:",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L907-L920"
+    },
+    "v4indexfwd": {
+      "path": "vllm/models/deepseek_v4/attention.py",
+      "symbol": "DeepseekV4Indexer.forward",
+      "start": 1069,
+      "end": 1138,
+      "declaration": "def forward(",
+      "sha256": "896da67731ead60c3278625173005d8e586c22290c20e7348249212124c29dba",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/attention.py#L1069-L1138"
+    },
+    "v4compressfwd": {
+      "path": "vllm/models/deepseek_v4/compressor.py",
+      "symbol": "DeepseekCompressor.forward",
+      "start": 354,
+      "end": 499,
+      "declaration": "def forward(",
+      "sha256": "5a20631846031656185b50d60787750dd6080700bcc339c298ce15be39bd2303",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/compressor.py#L354-L499"
+    },
+    "compressstate": {
+      "path": "vllm/models/deepseek_v4/compressor.py",
+      "symbol": "CompressorStateCache.get_kv_cache_spec",
+      "start": 179,
+      "end": 192,
+      "declaration": "def get_kv_cache_spec(self, vllm_config: VllmConfig) -> KVCacheSpec:",
+      "sha256": "5a20631846031656185b50d60787750dd6080700bcc339c298ce15be39bd2303",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/compressor.py#L179-L192"
+    },
+    "v4headpad": {
+      "path": "vllm/models/deepseek_v4/nvidia/flashmla.py",
+      "symbol": "DeepseekV4FlashMLAAttention.get_padded_num_q_heads",
+      "start": 78,
+      "end": 85,
+      "declaration": "def get_padded_num_q_heads(cls, num_heads: int) -> int:",
+      "sha256": "28f636943e330702ce1d02ad1a6a242237bbce2503ee55f167274afa7d1ca0fe",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/flashmla.py#L78-L85"
+    },
+    "v4flashmqa": {
+      "path": "vllm/models/deepseek_v4/nvidia/flashmla.py",
+      "symbol": "DeepseekV4FlashMLAAttention.forward_mqa",
+      "start": 87,
+      "end": 172,
+      "declaration": "def forward_mqa(",
+      "sha256": "28f636943e330702ce1d02ad1a6a242237bbce2503ee55f167274afa7d1ca0fe",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/flashmla.py#L87-L172"
+    },
+    "v4flashprefill": {
+      "path": "vllm/models/deepseek_v4/nvidia/flashmla.py",
+      "symbol": "DeepseekV4FlashMLAAttention._forward_prefill",
+      "start": 266,
+      "end": 398,
+      "declaration": "def _forward_prefill(",
+      "sha256": "28f636943e330702ce1d02ad1a6a242237bbce2503ee55f167274afa7d1ca0fe",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/flashmla.py#L266-L398"
+    },
+    "v4flashdecode": {
+      "path": "vllm/models/deepseek_v4/nvidia/flashmla.py",
+      "symbol": "DeepseekV4FlashMLAAttention._forward_decode",
+      "start": 174,
+      "end": 264,
+      "declaration": "def _forward_decode(",
+      "sha256": "28f636943e330702ce1d02ad1a6a242237bbce2503ee55f167274afa7d1ca0fe",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/flashmla.py#L174-L264"
+    },
+    "v4oproj": {
+      "path": "vllm/models/deepseek_v4/nvidia/ops/o_proj.py",
+      "symbol": "deep_gemm_fp8_o_proj",
+      "start": 35,
+      "end": 103,
+      "declaration": "def deep_gemm_fp8_o_proj(",
+      "sha256": "f2893ee6458eef50a371aae835b03fe1296f60f604236ab56235235637836e91",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/ops/o_proj.py#L35-L103"
+    },
+    "v4dspark": {
+      "path": "vllm/models/deepseek_v4/nvidia/dspark.py",
+      "symbol": "DSparkDeepseekV4ForCausalLM",
+      "start": 349,
+      "end": 602,
+      "declaration": "class DSparkDeepseekV4ForCausalLM(nn.Module):",
+      "sha256": "963e7b7d88a3fbb89f33326ac329605ed95efc6377115a6c806af37ede6a7fa8",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/dspark.py#L349-L602"
+    },
+    "v4mtp": {
+      "path": "vllm/models/deepseek_v4/nvidia/mtp.py",
+      "symbol": "DeepSeekV4MTP",
+      "start": 307,
+      "end": 576,
+      "declaration": "class DeepSeekV4MTP(nn.Module):",
+      "sha256": "8cc37e01190841f51649a10836250683da7c019751cba4ca4ddb4a55913aec19",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v4/nvidia/mtp.py#L307-L576"
+    },
+    "v41attninit": {
+      "path": "vllm/models/deepseek_v41/attention.py",
+      "symbol": "DeepseekV4Attention.__init__",
+      "start": 274,
+      "end": 657,
+      "declaration": "def __init__(",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/attention.py#L274-L657"
+    },
+    "v41prepare": {
+      "path": "vllm/models/deepseek_v41/attention.py",
+      "symbol": "DeepseekV4Attention._prepare_and_attn",
+      "start": 832,
+      "end": 914,
+      "declaration": "def _prepare_and_attn(",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/attention.py#L832-L914"
+    },
+    "v41spec": {
+      "path": "vllm/models/deepseek_v41/attention.py",
+      "symbol": "DeepseekV4Attention.get_kv_cache_spec",
+      "start": 1138,
+      "end": 1163,
+      "declaration": "def get_kv_cache_spec(self, vllm_config: VllmConfig) -> KVCacheSpec | None:",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/attention.py#L1138-L1163"
+    },
+    "v41cache": {
+      "path": "vllm/models/deepseek_v41/attention.py",
+      "symbol": "DeepseekV4Attention._compressed_kv_cache",
+      "start": 1165,
+      "end": 1172,
+      "declaration": "def _compressed_kv_cache(self) -> torch.Tensor:",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/attention.py#L1165-L1172"
+    },
+    "v41qnorm": {
+      "path": "vllm/models/deepseek_v41/attention.py",
+      "symbol": "DeepseekV4Attention._split_qkv_and_norm",
+      "start": 773,
+      "end": 802,
+      "declaration": "def _split_qkv_and_norm(",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/attention.py#L773-L802"
+    },
+    "v41indexer": {
+      "path": "vllm/models/deepseek_v41/attention.py",
+      "symbol": "DeepseekV4Indexer.__init__",
+      "start": 1277,
+      "end": 1403,
+      "declaration": "def __init__(",
+      "sha256": "dd146642fc7d7034f32feecf35ff4d7d9460f59a8a57444c0dd6f367fe8f15fb",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/attention.py#L1277-L1403"
+    },
+    "v41modelinit": {
+      "path": "vllm/models/deepseek_v41/nvidia/model.py",
+      "symbol": "DeepseekV4Model.__init__",
+      "start": 663,
+      "end": 880,
+      "declaration": "def __init__(self, *, vllm_config: VllmConfig, prefix: str = \"\"):",
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/model.py#L663-L880"
+    },
+    "v41modelfwd": {
+      "path": "vllm/models/deepseek_v41/nvidia/model.py",
+      "symbol": "DeepseekV4Model.forward",
+      "start": 912,
+      "end": 1077,
+      "declaration": "def forward(",
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/model.py#L912-L1077"
+    },
+    "v41replaysupport": {
+      "path": "vllm/models/deepseek_v41/nvidia/model.py",
+      "symbol": "DeepseekV4Model._decoder_replay_supported",
+      "start": 1202,
+      "end": 1239,
+      "declaration": "def _decoder_replay_supported(self, vllm_config: VllmConfig, cut: int) -> bool:",
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/model.py#L1202-L1239"
+    },
+    "v41moe": {
+      "path": "vllm/models/deepseek_v41/nvidia/model.py",
+      "symbol": "DeepseekV4MoE.__init__",
+      "start": 126,
+      "end": 152,
+      "declaration": "def __init__(",
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/model.py#L126-L152"
+    },
+    "v41defer": {
+      "path": "vllm/models/deepseek_v41/nvidia/model.py",
+      "symbol": "DeepseekV4MoE.defer_finalize",
+      "start": 154,
+      "end": 174,
+      "declaration": "def defer_finalize(self) -> None:",
+      "sha256": "5fe8b4a758ab586dd24ac218873a2c064cd3d72687b196dec4edf1b5e53f83a3",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/model.py#L154-L174"
+    },
+    "v41flashmqa": {
+      "path": "vllm/models/deepseek_v41/nvidia/flashmla.py",
+      "symbol": "DeepseekV4FlashMLAAttention.forward_mqa",
+      "start": 76,
+      "end": 165,
+      "declaration": "def forward_mqa(",
+      "sha256": "6bfcc91c278bae8f9c95d9ec4da12ef98112b9ccf9d22547743485759c258348",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/nvidia/flashmla.py#L76-L165"
+    },
+    "engramlayout": {
+      "path": "vllm/models/deepseek_v41/common/engram.py",
+      "symbol": "EngramLayout.from_config",
+      "start": 246,
+      "end": 249,
+      "declaration": "def from_config(cls, config) -> \"EngramLayout | None\":",
+      "sha256": "80d6f14973c99be431029e0fba4a6a784a428501bd6ba1726cff0879e0e1627f",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/deepseek_v41/common/engram.py#L246-L249"
+    },
+    "swabuild": {
+      "path": "vllm/v1/attention/backends/mla/sparse_swa.py",
+      "symbol": "DeepseekSparseSWAMetadataBuilder.build",
+      "start": 575,
+      "end": 783,
+      "declaration": "def build(",
+      "sha256": "870adaf9bec93dc818a18ba8057035a08d687e7ea415b76c12d9fea28ca0cbef",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/attention/backends/mla/sparse_swa.py#L575-L783"
+    },
+    "swacache": {
+      "path": "vllm/v1/attention/backends/mla/sparse_swa.py",
+      "symbol": "DeepseekV4SWACache.get_kv_cache_spec",
+      "start": 116,
+      "end": 140,
+      "declaration": "def get_kv_cache_spec(self, vllm_config: VllmConfig) -> KVCacheSpec:",
+      "sha256": "870adaf9bec93dc818a18ba8057035a08d687e7ea415b76c12d9fea28ca0cbef",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/attention/backends/mla/sparse_swa.py#L116-L140"
+    },
+    "mlaspec": {
+      "path": "vllm/v1/kv_cache_interface.py",
+      "symbol": "MLAAttentionSpec",
+      "start": 686,
+      "end": 754,
+      "declaration": "class MLAAttentionSpec(FullAttentionSpec):",
+      "sha256": "39ea5be3054f97238f81ba070ea661f1b5975a6268ced5f413d4a057ea449d4a",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/kv_cache_interface.py#L686-L754"
+    },
+    "slotkernel": {
+      "path": "vllm/v1/worker/block_table.py",
+      "symbol": "ComputeSlotMappingKernel.kernel",
+      "start": 320,
+      "end": 376,
+      "declaration": "def kernel(",
+      "sha256": "4068aea7336627f809def92f45401659d7c7c592d4da5dace6a11c90e7850c4a",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/block_table.py#L320-L376"
+    },
+    "compressedslot": {
+      "path": "vllm/v1/attention/backends/mla/compressor_utils.py",
+      "symbol": "CompressedSlotMappingKernel.kernel",
+      "start": 45,
+      "end": 106,
+      "declaration": "def kernel(",
+      "sha256": "0d6ce9a9c96093b81dff88bcab1501b73eb0e6443c6ba5475c1e58fdbff9cb1a",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/attention/backends/mla/compressor_utils.py#L45-L106"
+    },
+    "rowforward": {
+      "path": "vllm/model_executor/layers/linear.py",
+      "symbol": "RowParallelLinear.forward",
+      "start": 1762,
+      "end": 1788,
+      "declaration": "def forward(",
+      "sha256": "7a9b90937865fa35d955ffc2017f23d3997bc4fba954e2667870b1b4854a38e0",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/linear.py#L1762-L1788"
+    },
+    "embedforward": {
+      "path": "vllm/model_executor/layers/vocab_parallel_embedding.py",
+      "symbol": "VocabParallelEmbedding.forward",
+      "start": 518,
+      "end": 563,
+      "declaration": "def forward(self, input_):",
+      "sha256": "01576027a0262d2135800aab0ddb2fe2701fae2177c33f8ad2426240b6e04073",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/vocab_parallel_embedding.py#L518-L563"
+    },
+    "logitsgather": {
+      "path": "vllm/model_executor/layers/logits_processor.py",
+      "symbol": "LogitsProcessor._gather_logits",
+      "start": 122,
+      "end": 134,
+      "declaration": "def _gather_logits(self, logits: torch.Tensor) -> torch.Tensor:",
+      "sha256": "35cf8235cb529ba2d37358fe9b9e5a29f40b5c3cbcc9e6750c8480c51bd7da83",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/logits_processor.py#L122-L134"
+    },
+    "logitslocal": {
+      "path": "vllm/model_executor/layers/logits_processor.py",
+      "symbol": "LogitsProcessor._get_logits",
+      "start": 180,
+      "end": 199,
+      "declaration": "def _get_logits(",
+      "sha256": "35cf8235cb529ba2d37358fe9b9e5a29f40b5c3cbcc9e6750c8480c51bd7da83",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/logits_processor.py#L180-L199"
+    },
+    "spag": {
+      "path": "vllm/models/common/ops/sequence_parallel.py",
+      "symbol": "sp_all_gather",
+      "start": 23,
+      "end": 27,
+      "declaration": "def sp_all_gather(x: torch.Tensor) -> torch.Tensor:",
+      "sha256": "699fde98360fc8d604055e2987d93108ee489e87cc5563949d2a3dcd838eb8bd",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/common/ops/sequence_parallel.py#L23-L27"
+    },
+    "sprs": {
+      "path": "vllm/models/common/ops/sequence_parallel.py",
+      "symbol": "sp_reduce_scatter",
+      "start": 30,
+      "end": 39,
+      "declaration": "def sp_reduce_scatter(x: torch.Tensor) -> torch.Tensor:",
+      "sha256": "699fde98360fc8d604055e2987d93108ee489e87cc5563949d2a3dcd838eb8bd",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/common/ops/sequence_parallel.py#L30-L39"
+    },
+    "spshard": {
+      "path": "vllm/models/common/ops/sequence_parallel.py",
+      "symbol": "sp_shard",
+      "start": 42,
+      "end": 50,
+      "declaration": "def sp_shard(x: torch.Tensor) -> torch.Tensor:",
+      "sha256": "699fde98360fc8d604055e2987d93108ee489e87cc5563949d2a3dcd838eb8bd",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/models/common/ops/sequence_parallel.py#L42-L50"
+    },
+    "parallelinit": {
+      "path": "vllm/distributed/parallel_state.py",
+      "symbol": "initialize_model_parallel",
+      "start": 2056,
+      "end": 2363,
+      "declaration": "def initialize_model_parallel(",
+      "sha256": "0e47cff9a89717183bdce6403f0454961848247f51306a0f1dfbe3d6e1b93336",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/distributed/parallel_state.py#L2056-L2363"
+    },
+    "moeparallel": {
+      "path": "vllm/model_executor/layers/fused_moe/config.py",
+      "symbol": "FusedMoEParallelConfig.make",
+      "start": 1108,
+      "end": 1236,
+      "declaration": "def make(",
+      "sha256": "575248839aa351e8a1ab47a0965882b32c35932eb3e6e780271606e5b3451d9d",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/config.py#L1108-L1236"
+    },
+    "moefactory": {
+      "path": "vllm/model_executor/layers/fused_moe/layer.py",
+      "symbol": "FusedMoEFactory",
+      "start": 88,
+      "end": 441,
+      "declaration": "def FusedMoEFactory(",
+      "sha256": "ddc92bf76eabaf0465e2dc515b844293c16691bb6e66f92a45e47c4956b6e328",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/layer.py#L88-L441"
+    },
+    "naiveprepare": {
+      "path": "vllm/model_executor/layers/fused_moe/prepare_finalize/naive_dp_ep.py",
+      "symbol": "MoEPrepareAndFinalizeNaiveDPEPModular.prepare",
+      "start": 136,
+      "end": 208,
+      "declaration": "def prepare(",
+      "sha256": "3265cd408ccb00db79933bfdc851520954a5e4aa76c2d9bae08b783cd52bc11e",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/prepare_finalize/naive_dp_ep.py#L136-L208"
+    },
+    "naivefinalize": {
+      "path": "vllm/model_executor/layers/fused_moe/prepare_finalize/naive_dp_ep.py",
+      "symbol": "MoEPrepareAndFinalizeNaiveDPEPModular.finalize",
+      "start": 210,
+      "end": 245,
+      "declaration": "def finalize(",
+      "sha256": "3265cd408ccb00db79933bfdc851520954a5e4aa76c2d9bae08b783cd52bc11e",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/prepare_finalize/naive_dp_ep.py#L210-L245"
+    },
+    "agdispatch": {
+      "path": "vllm/distributed/device_communicators/all2all.py",
+      "symbol": "AgRsAll2AllManager.dispatch",
+      "start": 128,
+      "end": 161,
+      "declaration": "def dispatch(",
+      "sha256": "0ba610c5011b801e2a01062f38d98fc85941d67243baa0233b2d9f3fd2126f20",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/distributed/device_communicators/all2all.py#L128-L161"
+    },
+    "agcombine": {
+      "path": "vllm/distributed/device_communicators/all2all.py",
+      "symbol": "AgRsAll2AllManager.combine",
+      "start": 163,
+      "end": 173,
+      "declaration": "def combine(",
+      "sha256": "0ba610c5011b801e2a01062f38d98fc85941d67243baa0233b2d9f3fd2126f20",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/distributed/device_communicators/all2all.py#L163-L173"
+    },
+    "agcommgroup": {
+      "path": "vllm/distributed/device_communicators/all2all.py",
+      "symbol": "AgRsAll2AllManager._get_comm_group",
+      "start": 76,
+      "end": 86,
+      "declaration": "def _get_comm_group(self, is_sequence_parallel: bool) -> Any:",
+      "sha256": "0ba610c5011b801e2a01062f38d98fc85941d67243baa0233b2d9f3fd2126f20",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/distributed/device_communicators/all2all.py#L76-L86"
+    },
+    "moerun": {
+      "path": "vllm/model_executor/layers/fused_moe/runner/moe_runner.py",
+      "symbol": "MoERunner.forward",
+      "start": 688,
+      "end": 797,
+      "declaration": "def forward(",
+      "sha256": "20b69fe514bebd6723a1378f89a564c8fec4144c30244101f629c3f32c188183",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/runner/moe_runner.py#L688-L797"
+    },
+    "moesharedreduce": {
+      "path": "vllm/model_executor/layers/fused_moe/runner/moe_runner.py",
+      "symbol": "MoERunner._maybe_reduce_shared_expert_output",
+      "start": 429,
+      "end": 451,
+      "declaration": "def _maybe_reduce_shared_expert_output(",
+      "sha256": "20b69fe514bebd6723a1378f89a564c8fec4144c30244101f629c3f32c188183",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/runner/moe_runner.py#L429-L451"
+    },
+    "sharedorder": {
+      "path": "vllm/model_executor/layers/fused_moe/runner/shared_experts.py",
+      "symbol": "SharedExperts._determine_shared_experts_order",
+      "start": 101,
+      "end": 121,
+      "declaration": "def _determine_shared_experts_order(",
+      "sha256": "59cd2cf13c1e0d6301566f5b415807bb674b6786336d394c01c1473b4740e314",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/runner/shared_experts.py#L101-L121"
+    },
+    "sharedasync": {
+      "path": "vllm/model_executor/layers/fused_moe/runner/shared_experts.py",
+      "symbol": "SharedExperts.maybe_forward_async",
+      "start": 123,
+      "end": 142,
+      "declaration": "def maybe_forward_async(self, shared_experts_input: torch.Tensor) -> bool:",
+      "sha256": "59cd2cf13c1e0d6301566f5b415807bb674b6786336d394c01c1473b4740e314",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/runner/shared_experts.py#L123-L142"
+    },
+    "sharedwait": {
+      "path": "vllm/model_executor/layers/fused_moe/runner/shared_experts.py",
+      "symbol": "SharedExperts.wait",
+      "start": 144,
+      "end": 147,
+      "declaration": "def wait(self) -> None:",
+      "sha256": "59cd2cf13c1e0d6301566f5b415807bb674b6786336d394c01c1473b4740e314",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/model_executor/layers/fused_moe/runner/shared_experts.py#L144-L147"
+    },
+    "multistream": {
+      "path": "vllm/utils/multi_stream_utils.py",
+      "symbol": "execute_in_parallel",
+      "start": 66,
+      "end": 141,
+      "declaration": "def execute_in_parallel(",
+      "sha256": "015ff402a7c91929fa89672ff4cb31fa29cfd4f865c32bd03eb0a016b33a4644",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/utils/multi_stream_utils.py#L66-L141"
+    },
+    "maybeparallel": {
+      "path": "vllm/utils/multi_stream_utils.py",
+      "symbol": "maybe_execute_in_parallel",
+      "start": 16,
+      "end": 63,
+      "declaration": "def maybe_execute_in_parallel(",
+      "sha256": "015ff402a7c91929fa89672ff4cb31fa29cfd4f865c32bd03eb0a016b33a4644",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/utils/multi_stream_utils.py#L16-L63"
+    },
+    "ubatchctx": {
+      "path": "vllm/v1/worker/ubatching.py",
+      "symbol": "UBatchContext",
+      "start": 20,
+      "end": 145,
+      "declaration": "class UBatchContext:",
+      "sha256": "ead5b267c5e708520e2a4199b93d6790ac95863ffc24e8119b9a25f8d28ffac1",
+      "url": "https://github.com/jia0713/vllm/blob/10cc2f6ae2c9ba7cc5841ece95e27d0562aef1bf/vllm/v1/worker/ubatching.py#L20-L145"
+    }
+  }
+}

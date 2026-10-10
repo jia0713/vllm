@@ -1,0 +1,183 @@
+{
+  "evidence": "CPU arithmetic checks; no GPU or model computation",
+  "config_origin": "teaching-only dimensions, not a checkpoint",
+  "attention_shapes": {
+    "tp": 2,
+    "tokens": 6,
+    "input": [
+      6,
+      16
+    ],
+    "fused_wqa_wkv_weight": [
+      10,
+      16
+    ],
+    "wq_b_weight": [
+      16,
+      6
+    ],
+    "semantic_q": [
+      6,
+      4,
+      4
+    ],
+    "wo_a_grouped_weight": [
+      2,
+      3,
+      8
+    ],
+    "wo_b_weight": [
+      16,
+      6
+    ],
+    "partial_output": [
+      6,
+      16
+    ],
+    "shared_kv": [
+      6,
+      4
+    ],
+    "scope": "semantic dimensions, not packed storage or backend legality"
+  },
+  "ordinary_slots": [
+    28,
+    31,
+    8,
+    11,
+    36
+  ],
+  "compressed_slots": {
+    "3": 20,
+    "4": -1,
+    "7": 21,
+    "11": 22,
+    "15": 23,
+    "19": 32
+  },
+  "packed_page_teaching": {
+    "records": 32,
+    "content_B": 18688,
+    "aligned_B": 19008,
+    "alignment_B": 576
+  },
+  "expert_m": [
+    2,
+    0,
+    1,
+    1,
+    0,
+    2,
+    1,
+    1
+  ],
+  "expert5_gemm_mnk": [
+    [
+      2,
+      12,
+      4
+    ],
+    [
+      2,
+      4,
+      6
+    ]
+  ],
+  "tp_groups": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "dp_groups": [
+    [
+      0,
+      2,
+      4,
+      6
+    ],
+    [
+      1,
+      3,
+      5,
+      7
+    ]
+  ],
+  "ep_group": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "expert_parallel_sizes": {
+    "EP_on": {
+      "expert_tp": 1,
+      "ep": 8
+    },
+    "EP_off": {
+      "expert_tp": 8,
+      "ep": 1
+    }
+  },
+  "bf16_all_reduce_tp8": {
+    "algorithm": "equal-sized ring",
+    "logical_full_payload_B": 8388608,
+    "per_rank_send_B": 14680064,
+    "per_rank_recv_B": 14680064,
+    "group_send_B": 117440512,
+    "group_recv_B": 117440512,
+    "group_send_plus_recv_B": 234881024,
+    "per_rank_send_MB": 14.680064,
+    "per_rank_send_MiB": 14.0,
+    "scope": "activation data only; excludes scales and metadata"
+  },
+  "bf16_ep_prefill_all_gather": {
+    "algorithm": "equal-sized ring",
+    "logical_full_payload_B": 196608,
+    "per_rank_send_B": 172032,
+    "per_rank_recv_B": 172032,
+    "group_send_B": 1376256,
+    "group_recv_B": 1376256,
+    "group_send_plus_recv_B": 2752512,
+    "per_rank_send_MB": 0.172032,
+    "per_rank_send_MiB": 0.1640625,
+    "scope": "activation data only; excludes scales and metadata"
+  },
+  "bf16_ep_decode_reduce_scatter": {
+    "algorithm": "equal-sized ring",
+    "logical_full_payload_B": 131072,
+    "per_rank_send_B": 114688,
+    "per_rank_recv_B": 114688,
+    "group_send_B": 917504,
+    "group_recv_B": 917504,
+    "group_send_plus_recv_B": 1835008,
+    "per_rank_send_MB": 0.114688,
+    "per_rank_send_MiB": 0.109375,
+    "scope": "activation data only; excludes scales and metadata"
+  },
+  "teaching_trace": {
+    "serial": 15,
+    "overlapped": 11
+  },
+  "source_sharing_teaching_content_bytes": {
+    "v4": 598016,
+    "v41": 540672,
+    "includes_other_cache": false
+  }
+}
